@@ -4,7 +4,10 @@ import { defineConfig } from "vite";
 export default defineConfig({
     test: {
         include: [
-            "src/**/*.{js,ts}",
+            "src/**/*.{spec,test}.{js,ts}",
+        ],
+        includeSource: [
+            "src/**/*.{js,ts}"
         ],
         exclude: [
             "src/**/*.d.ts",
